@@ -6,9 +6,11 @@ const sequelize = new Sequelize("node38_food", "root", "1234", {
     dialect: "mysql"
 });
 
-try {
-    await sequelize.authenticate();  // xác minh là đã connect thành công database hay chưa
-    console.log("Connect Successfully");
-} catch (error) {
-    console.log("Connect fail!");
-}
+// try {
+//     await sequelize.authenticate();  // xác minh là đã connect thành công database hay chưa
+//     console.log("Connect Successfully");
+// } catch (error) {
+//     console.log("Connect fail!");
+// }
+
+export default sequelize;
